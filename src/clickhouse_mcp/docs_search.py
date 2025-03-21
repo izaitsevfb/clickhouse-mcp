@@ -94,11 +94,11 @@ def get_context_snippet(content: str, query: str, context_size: int = 50) -> str
     
     Args:
         content: The document content to extract from.
-        query: The search query.
+        query: The search query to find in the content.
         context_size: Number of characters to include before and after the match.
         
     Returns:
-        A snippet of text around the query.
+        A snippet of text around the query with ellipsis.
     """
     content_lower = content.lower()
     query_lower = query.lower()
