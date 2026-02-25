@@ -81,7 +81,7 @@ class TestClickhouseQuery(unittest.TestCase):
         # The function now returns a dictionary with result information
         self.assertIsInstance(result, dict)
         self.assertIsNotNone(result["result_file"])
-        self.assertEqual(result["result_rows"], 0)  # Should be 0 rows
+        self.assertEqual(result["result_rows"], [])  # Should be 0 rows
         self.assertEqual(result["query_id"], "empty_query_id")
         self.assertEqual(result["columns"], ["column1", "column2"])
         

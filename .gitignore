@@ -1,6 +1,7 @@
 .idea
 venv
 clickhouse_docs
+.claude
 
 # Python cache files
 __pycache__/

@@ -4,7 +4,7 @@ import os
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 
-from langchain.schema import Document
+from langchain_core.documents import Document
 from langchain_community.vectorstores import FAISS
 
 from .docs_search import get_project_root, get_package_root
