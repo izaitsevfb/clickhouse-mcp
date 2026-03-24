@@ -7,7 +7,9 @@
         "-m",
         "clickhouse_mcp"
       ],
-      "env": {}
+      "env": {
+        "CLICKHOUSE_MCP_NO_PROXY": "1"
+      }
     }
   }
 }
