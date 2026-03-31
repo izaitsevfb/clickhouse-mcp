@@ -41,6 +41,8 @@ MAX_RESPONSE_SIZE = 10 * 1024  # 10KB
 def datetime_serializer(obj):
     if isinstance(obj, datetime.datetime):
         return obj.isoformat()
+    if isinstance(obj, bytes):
+        return obj.decode("utf-8", errors="replace")
     raise TypeError(f"Type {type(obj)} not serializable")
 
 
